@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
@@ -8,7 +8,6 @@
 
     <div id='container'></div>
 
-		<br />
 		<form class="form-horizontal">
 			<div class="control-group">
 				<label class="control-label" for="name">Name</label>
@@ -16,14 +15,13 @@
 					<input type="text" id="name" name="name" />
 				</div>
 			</div>
+			<div class="control-group">
+				<div class="controls">
+					<a id="testbutton" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i><span>Press Me!</span></a>
+				</div>
+			</div>
 		</form>
-    
-		<br />
 
-		<!--<button class="btn btn-primary" type="button" id="testbutton">Press Me!</button>-->
-		<a id="testbutton" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i> Press Me!</a>
-
-		<br />
 
 		<script src="js/jquery-2.0.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -36,6 +34,7 @@
 			function showMessage(val)
 			{
 				$('#container').html('<span>Hi, '+val+'</span>');
+                $('#testbutton span').html('Press Me Again!').attr('title','I Dare You!');
 			}
 		</script>
 	</body>

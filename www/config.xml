@@ -7,10 +7,10 @@
 	verscionCode = "100"
         version   = "1.0.0">
 
-    <name>YAPC Test</name>
+    <name>YAPC Test - Jameson</name>
 
     <description>
-        YAPC test application for Gabor's Class
+        YAPC test application for Gabor's Class - Jameson Allen
     </description>
 
     <author href="#" email="jameson.f.allen@gmail.com">
