@@ -13,9 +13,7 @@
 	<body>
 	<div class='navbar navbar-fixed-top navbar-inverse'>
 		<div class='navbar-inner'>
-			<ul class='nav'>
-				<li class='active'><a href='#'>Home</a></li>
-			</ul>
+			<a class="brand" href="#">Jameson PhoneGap Test</a>
     		<div id='container' class='navbar-text'></div>
 		</div>
 	</div>
@@ -47,6 +45,7 @@
 					var keycode = (e.keyCode ? e.keyCode : e.which);
 					if(keycode == '13'){
 						e.stopPropagation();
+						$('#testbutton').click();
                     	return false;
 					}	
 				});
