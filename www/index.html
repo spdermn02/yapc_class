@@ -46,7 +46,6 @@
 				$('#name').keypress(function(e){
 					var keycode = (e.keyCode ? e.keyCode : e.which);
 					if(keycode == '13'){
-						alert('You pressed a "enter" key in textbox');	
 						e.stopPropagation();
                     	return false;
 					}	
