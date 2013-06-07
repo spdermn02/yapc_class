@@ -4,13 +4,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.spdermn02.yapc-test"
-	verscionCode = "100"
-        version   = "1.0.0">
+	versionCode = "101"
+        version   = "1.0.1">
 
-    <name>YAPC Test - Jameson</name>
+    <name>AwesomeNess</name>
 
     <description>
-        YAPC test application for Gabor's Class - Jameson Allen
+		Created for YAPC::NA::2013 Class by Jameson Allen	
     </description>
 
     <author href="#" email="jameson.f.allen@gmail.com">
