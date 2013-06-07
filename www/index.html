@@ -29,14 +29,18 @@
 			<div class="control-group">
 				<div class="controls">
 					<a id="testbutton" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i>&nbsp;<span>Press Me!</span></a>
-					<a id="testbutton1" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i>&nbsp;<span>Get my F*n Location!</span></a>
+					<a id="testbutton1" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i>&nbsp;<span>Play Me Some tunes!</span></a>
 				</div>
 			</div>
 		</form>
 
 		<br />
 		
-		<p id="geolocation">Finding geolocation...</p>
+
+		<a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Audio</a>
+        <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
+        <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
+        <p id="audio_position"></p>
 
 		<script src="js/jquery-2.0.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
