@@ -29,6 +29,7 @@
 			<div class="control-group">
 				<div class="controls">
 					<a id="testbutton" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i>&nbsp;<span>Press Me!</span></a>
+					<a id="testbutton1" class="btn btn-primary"><i class="icon-thumbs-up icon-white"></i>&nbsp;<span>Get my F*n Location!</span></a>
 				</div>
 			</div>
 		</form>
@@ -44,7 +45,10 @@
 			$(window).ready(function(){
 				$('#testbutton').click(function(){
 					showMessage($('#name').val());
-				})
+				});
+				$('#testbutton1').click(function(){
+					onDeviceReady();
+				});
 				$('#name').keypress(function(e){
 					var keycode = (e.keyCode ? e.keyCode : e.which);
 					if(keycode == '13'){
@@ -62,7 +66,7 @@
 
 			// Wait for Cordova to load
     //
-    document.addEventListener("deviceready", onDeviceReady, false);
+    //document.addEventListener("deviceready", onDeviceReady, false);
 
     // Cordova is ready
     //
