@@ -25,7 +25,7 @@
         function onDeviceReady() {
             //playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
             //playAudio("http://audio.ibeat.org/?ccm=/files/enoe/693");
-			playAudio("media/enoe_-_Blunt_-_The_gods_are_laughing.mp3");
+			setupAndPlayAudio("media/enoe_-_Blunt_-_The_gods_are_laughing.mp3");
         }
 
         // Audio player
@@ -33,11 +33,15 @@
         var my_media = null;
         var mediaTimer = null;
 
+		function setupAndPlayAudio(src)
+		{
+			my_media = new Media(src, onSuccess, onError, setaudiostatus);
+			playAudio();
+		}
+
         // Play audio
         //
-        function playAudio(src) {
-            // Create Media object from src
-            my_media = new Media(src, onSuccess, onError, setaudiostatus);
+        function playAudio() {
 
             // Play audio
             my_media.play();
@@ -68,9 +72,12 @@
         function pauseAudio() {
             if (my_media) {
 				if( audio_staus === 3 )
-				{ my_media.play(); }
+				{ playAudio(); }
 				else
-				{ my_media.pause(); }
+				{ my_media.pause(); 
+            	  clearInterval(mediaTimer);
+            	  mediaTimer = null;
+				}
             }
         }
 
@@ -88,6 +95,7 @@
             }
             clearInterval(mediaTimer);
             mediaTimer = null;
+            document.getElementById('audio_position').innerHTML = '';
         }
 
         // onSuccess Callback
