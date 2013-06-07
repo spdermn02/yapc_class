@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.spdermn02.yapc-test"
-	versionCode = "1017"
-        version   = "1.0.17">
+	versionCode = "1018"
+        version   = "1.0.18">
 
     <name>AwesomeNess</name>
 

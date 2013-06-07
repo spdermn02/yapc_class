@@ -8,6 +8,15 @@
 				padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 				font-size: 15px;
 			}
+
+			/*progress, progress::-webkit-progress-bar, progress::-webkit-progress-value, progress::-moz-progress-bar*/
+			progress
+			{
+				background-color: #f3f3f3;  
+				border: 0;  
+				height: 18px;  
+				border-radius: 9px;  
+			}  
 		</style>
 	</head>
 	<body>
@@ -40,7 +49,7 @@
         <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
         <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
         <p id="audio_position"></p>
-		<progress id="track" value=0 max=100></progress>
+		<progress id="track" value="0" max="100"></progress>
 
 		<script src="js/jquery-2.0.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
