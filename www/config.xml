@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.spdermn02.yapc-test"
-	versionCode = "108"
-        version   = "1.0.8">
+	versionCode = "109"
+        version   = "1.0.9">
 
     <name>AwesomeNess</name>
 
@@ -43,6 +43,7 @@
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
+	<plugin name="Media" value="CDVSound" />
 
     <!-- Define app icon for each platform. -->
     <!--
