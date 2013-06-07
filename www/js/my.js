@@ -37,7 +37,7 @@
         //
         function playAudio(src) {
             // Create Media object from src
-            my_media = new Media(src, onSuccess, onError);
+            my_media = new Media(src, onSuccess, onError, setaudiostatus);
 
             // Play audio
             my_media.play();
@@ -67,12 +67,18 @@
         // 
         function pauseAudio() {
             if (my_media) {
-				if( my_media.media_status === Media.MEDIA_PAUSED )
+				if( audio_staus === 3 )
 				{ my_media.play(); }
 				else
 				{ my_media.pause(); }
             }
         }
+
+		var audio_status = 0;
+		function setaudiostatus(num)
+		{
+			audio_staus = num;
+		}	
 
         // Stop audio
         // 
