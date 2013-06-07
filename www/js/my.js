@@ -23,8 +23,9 @@
         // Cordova is ready
         //
         function onDeviceReady() {
-            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
-            playAudio("http://audio.ibeat.org/?ccm=/files/enoe/693");
+            //playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+            //playAudio("http://audio.ibeat.org/?ccm=/files/enoe/693");
+			playAudio("https://upload.wikimedia.org/wikipedia/commons/f/f2/Median_test.ogg");
         }
 
         // Audio player
