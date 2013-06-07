@@ -67,7 +67,10 @@
         // 
         function pauseAudio() {
             if (my_media) {
-                my_media.pause();
+				if( my_media.media_status === Media.MEDIA_PAUSED )
+				{ my_media.play(); }
+				else
+				{ my_media.pause(); }
             }
         }
 
